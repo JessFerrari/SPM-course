@@ -1,0 +1,2 @@
+10000# elapsed time (softime_plain): 0.000120502s
+1000# elapsed time (softime_plain): 1.9618e-05s

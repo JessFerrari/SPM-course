@@ -1,0 +1,2 @@
+10000# elapsed time (softime_avx): 3.2017e-05s
+1000# elapsed time (softime_avx): 6.18e-06s

@@ -16,6 +16,9 @@ void softmax_auto(const float *input, float *output, size_t K) {
     float sum = 0.0f;
     for (size_t i = 0; i < K; ++i) {
         output[i] = std::exp(input[i] - max_val);
+    }
+
+    for (size_t i = 0; i < K; ++i) {
         sum += output[i];
     }
 
