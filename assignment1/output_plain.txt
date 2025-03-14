@@ -1,5 +1,0 @@
-128# elapsed time (softime_plain): 4.605e-06s
-1000# elapsed time (softime_plain): 9.084e-06s
-10000# elapsed time (softime_plain): 4.7924e-05s
-100000# elapsed time (softime_plain): 0.000355745s
-1000000# elapsed time (softime_plain): 0.00245661s

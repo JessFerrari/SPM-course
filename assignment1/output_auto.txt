@@ -1,5 +1,0 @@
-128# elapsed time (softime_auto): 5.177e-06s
-1000# elapsed time (softime_auto): 1.037e-05s
-10000# elapsed time (softime_auto): 3.1557e-05s
-100000# elapsed time (softime_auto): 0.000378295s
-1000000# elapsed time (softime_auto): 0.00263338s

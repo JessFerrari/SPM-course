@@ -1,5 +1,0 @@
-128# elapsed time (softime_avx): 6.13e-07s
-1000# elapsed time (softime_avx): 2.675e-06s
-10000# elapsed time (softime_avx): 2.7723e-05s
-100000# elapsed time (softime_avx): 0.00017076s
-1000000# elapsed time (softime_avx): 0.00119148s

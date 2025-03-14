@@ -2,7 +2,7 @@ CXX       = g++ -std=c++17
 
 OPTFLAGS  = -O3  
 AVXFLAGS  = -march=native -mavx
-AUTOFLAGS = -march=native 
+AUTOFLAGS = -march=native -ffast-math
 
 
 CXXFLAGS  = -Wall 

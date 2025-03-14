@@ -6,27 +6,24 @@
 #include <hpc_helpers.hpp>
 
 void softmax_auto(const float *input, float *output, size_t K) {
-    // Trova il massimo valore
+    // Find the maximum to stabilize the computation of the exponential
     float max_val = -std::numeric_limits<float>::infinity();
-    
-    #pragma omp simd reduction(max:max_val)
     for (size_t i = 0; i < K; ++i) {
-        max_val = std::max(max_val, input[i]);
+		max_val = std::max(max_val, input[i]);
     }
 
-    // Calcola gli esponenziali e la somma
+    // computes all exponentials with the shift of max_val and the total sum
     float sum = 0.0f;
-    #pragma omp simd reduction(+:sum)
     for (size_t i = 0; i < K; ++i) {
         output[i] = std::exp(input[i] - max_val);
         sum += output[i];
     }
 
-    // Normalizza i valori
-    #pragma omp simd
+    // normalize by dividing for the total sum
     for (size_t i = 0; i < K; ++i) {
         output[i] /= sum;
     }
+
 }
 
 
