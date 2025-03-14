@@ -1,7 +1,7 @@
 CXX       = g++ -std=c++17
 
 OPTFLAGS  = -O3  
-AVXFLAGS  = -mavx -mfma 
+AVXFLAGS  = -march=native -mavx
 AUTOFLAGS = -march=native 
 
 

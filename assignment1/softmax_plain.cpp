@@ -63,6 +63,8 @@ int main(int argc, char *argv[]) {
 	std::vector<float> input=generate_random_input(K);
 	std::vector<float> output(K);
 
+	std::cout << K;
+
 	TIMERSTART(softime_plain);
 	softmax_plain(input.data(), output.data(), K);
 	TIMERSTOP(softime_plain);

@@ -113,6 +113,8 @@ int main(int argc, char *argv[]) {
 	std::vector<float> input=generate_random_input(K);
 	std::vector<float> output(K);
 
+	std::cout << K;
+
 	TIMERSTART(softime_avx);
 	softmax_avx(input.data(), output.data(), K);
 	TIMERSTOP(softime_avx);
